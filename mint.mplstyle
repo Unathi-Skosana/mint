@@ -64,7 +64,7 @@ axes.labelpad:    10
 axes.axisbelow:   True
 polaraxes.grid:   True
 axes3d.grid:      True
-axes.prop_cycle : cycler('color', ['2CBDFE', '47DBCD', 'F5B14C', '661D98', '9D2EC5', 'F3A0F2'])
+axes.prop_cycle : cycler('color', ['09D1D6', '4FEBA5', 'FFC867', '5C82FF', '7566FF', 'D551A0', 'EC915C', '005CC5', 'A2E6F5'])
 
 # legend
 legend.fontsize: 12
@@ -74,7 +74,7 @@ legend.frameon:  False
 
 savefig.bbox:        tight
 savefig.pad_inches:  0.05
-savefig.transparent: True
+savefig.transparent: False
 savefig.dpi:         96
 
 # Text
