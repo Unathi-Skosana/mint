@@ -8,10 +8,18 @@ plt.style.use('https://raw.githubusercontent.com/Unathi-Skosana/mint/main/tint.m
 
 ## demos
 
-![bar3d](https://raw.githubusercontent.com/unathi-skosana/mint/main/img/bar3d.png "bar3d")
+<p align="center">
+  <img src="https://raw.githubusercontent.com/unathi-skosana/mint/main/img/bar3d.png">
+</p>
 
-![contour3d](https://raw.githubusercontent.com/unathi-skosana/mint/main/img/contour3d.png "contour3d")
+<p align="center">
+  <img src="https://raw.githubusercontent.com/unathi-skosana/mint/main/img/contour3d.png">
+</p>
 
-![misc1.png](https://raw.githubusercontent.com/unathi-skosana/mint/main/img/misc1.png "misc1")
+<p align="center">
+  <img src="https://raw.githubusercontent.com/unathi-skosana/mint/main/img/misc1.png">
+</p>
 
-![misc2.png](https://raw.githubusercontent.com/unathi-skosana/mint/main/img/misc2.png "misc2")
+<p align="center">
+  <img src="https://raw.githubusercontent.com/unathi-skosana/mint/main/img/misc2.png">
+</p>

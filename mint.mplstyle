@@ -1,6 +1,6 @@
 # Set default figure size
 
-figure.figsize:   4, 4
+figure.figsize:   6, 6
 figure.dpi:       96
 figure.titlesize: 14
 
