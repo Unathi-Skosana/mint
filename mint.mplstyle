@@ -1,8 +1,9 @@
 # Set default figure size
 
-figure.figsize:   6, 6
-figure.dpi:       96
-figure.titlesize: 14
+figure.figsize:    5,5
+figure.dpi:        96
+figure.titlesize:  14
+figure.autolayout: True
 
 # fonts
 
@@ -47,7 +48,7 @@ patch.antialiased:     True
 grid.linewidth: 1.0
 grid.alpha:     .5
 grid.linestyle: --
-grid.color: dimgrey
+grid.color:     dimgrey
 
 # axes
 
@@ -73,25 +74,25 @@ legend.frameon:  False
 # Always save as 'tight'
 
 savefig.bbox:        tight
-savefig.pad_inches:  0.05
-savefig.transparent: False
-savefig.dpi:         96
+savefig.pad_inches:  0.0
+savefig.transparent: True
+savefig.dpi:         600
 
 # Text
 text.color: dimgrey
 
 #  LaTeX
 mathtext.fontset: custom
-mathtext.rm: mathpazo
-mathtext.it: mathpazo:italic
-mathtext.bf: mathpazo:bold
+mathtext.rm:      mathpazo
+mathtext.it:      mathpazo:italic
+mathtext.bf:      mathpazo:bold
 
 text.latex.preamble: \usepackage{amsmath, mathpazo, palatino}
 
 
 # image
 
-image.cmap: RdPu
+image.cmap: cubehelix
 
 # lines 
 

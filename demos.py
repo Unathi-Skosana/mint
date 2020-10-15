@@ -12,6 +12,7 @@ if __name__ == '__main__':
 
     plt.style.use('./mint.mplstyle')
 
+
     # create custom colormap from prop_cycle
 
     colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
@@ -33,6 +34,8 @@ if __name__ == '__main__':
 
     # Fixing random state for reproducibility
     np.random.seed(19680801)
+
+    plt.rcParams['ytick.minor.visible'] = False
 
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
@@ -115,6 +118,9 @@ if __name__ == '__main__':
     ax1.set_xlabel('X')
     ax1.set_ylabel('Y')
     ax1.set_zlabel('Z')
+
+
+    plt.rcParams['ytick.minor.visible'] = True
 
     fig, axes = plt.subplots(ncols=2, nrows=3)
     ax2, ax3, ax4, ax5, ax6, ax7 = axes.ravel()
