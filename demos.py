@@ -39,8 +39,9 @@ if __name__ == '__main__':
 
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
-
-    ax.view_init(elev=10, azim=135)
+    ax.view_init(elev=40, azim=25)
+    ax.dist = 16
+    ax.grid(False) 
 
     # Get rid of colored axes planes
     # First remove fill
@@ -49,9 +50,17 @@ if __name__ == '__main__':
     ax.zaxis.pane.fill = False
 
     # Now set color to white (or whatever is "invisible")
-    ax.xaxis.pane.set_edgecolor('w')
-    ax.yaxis.pane.set_edgecolor('w')
-    ax.zaxis.pane.set_edgecolor('w')
+    ax.xaxis.pane.set_edgecolor('black')
+    ax.yaxis.pane.set_edgecolor('black')
+    ax.zaxis.pane.set_edgecolor('black')
+
+    ax.xaxis.pane.set_alpha(1)
+    ax.yaxis.pane.set_alpha(1)
+    ax.zaxis.pane.set_alpha(1)
+
+    ax.xaxis.set_rotate_label(False)
+    ax.yaxis.set_rotate_label(False)
+    ax.zaxis.set_rotate_label(False)
 
     x, y = np.random.rand(2, 100) * 4
     hist, xedges, yedges = np.histogram2d(x, y, bins=4, range=[[0, 4], [0, 4]])
@@ -75,9 +84,9 @@ if __name__ == '__main__':
 
     ax.set_prop_cycle(cycler('color', rgba))
 
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_zlabel('Z')
+    ax.set_xlabel(r'$X$')
+    ax.set_ylabel(r'$Y$')
+    ax.set_zlabel(r'$Z$')
 
     ax.bar3d(xpos, ypos, zpos, dx, dy, dz, color=rgba, zsort='average')
 
@@ -102,6 +111,7 @@ if __name__ == '__main__':
     X, Y, Z = axes3d.get_test_data(0.05)
 
     # Plot the 3D surface
+    ax1.dist = 13
     ax1.plot_surface(X, Y, Z, rstride=8, cstride=8, alpha=0.5)
 
     # Plot projections of the contours for each dimension.  By choosing offsets

@@ -1,28 +1,24 @@
 # Set default figure size
-
 figure.figsize:    5,5
 figure.dpi:        96
-figure.titlesize:  14
+figure.titlesize:  20
 figure.autolayout: True
 
 # fonts
-
-font.family:      Roboto Condensed
-font.serif:       Roboto Condensed
-font.sans-serif:  Roboto Condensed
-font.monospace:   Roboto Mono
-
+font.family: sans-serif
+font.sans-serif: Inter
 
 # x ticks
 
 xtick.direction:     in
 xtick.major.size:    3
 xtick.major.width:   0.5
-xtick.minor.size:    1.5
+xtick.minor.size:    0.5
 xtick.minor.width:   0.5
+xtick.minor.visible: False
 xtick.top:           False
-xtick.labelsize:     10
-xtick.color:         dimgrey
+xtick.labelsize:     14
+xtick.color:         black
 
 
 # y ticks
@@ -30,12 +26,12 @@ xtick.color:         dimgrey
 ytick.direction:     in
 ytick.major.size:    3
 ytick.major.width:   0.5
-ytick.minor.size:    1.5
+ytick.minor.size:    0.5
 ytick.minor.width:   0.5
 ytick.minor.visible: True
 ytick.right:         True
-ytick.labelsize:     10
-ytick.color:         dimgrey
+ytick.labelsize:     14
+ytick.color:         black
 
 # patches
 
@@ -43,52 +39,41 @@ patch.linewidth:       1.5
 patch.force_edgecolor: True
 patch.antialiased:     True
 
-# grid
-
-grid.linewidth: 1.0
-grid.alpha:     .5
-grid.linestyle: --
-grid.color:     dimgrey
-
 # axes
 
-
-axes.titlesize:   12
-axes.titlepad:    10
+axes.linewidth:   1.5
+axes.titlesize:   14
+axes.titlepad:    14
 axes.titleweight: regular
 axes.titlecolor:  auto
-axes.edgecolor:   dimgrey
-axes.labelsize:   12
+axes.edgecolor:   black
+axes.labelsize:   14
 axes.labelweight: regular
-axes.labelcolor:  dimgrey
-axes.labelpad:    10
+axes.labelcolor:  black
+axes.labelpad:    14
 axes.axisbelow:   True
-polaraxes.grid:   True
-axes3d.grid:      True
+
 axes.prop_cycle : cycler('color', ['09D1D6', '4FEBA5', 'FFC867', '5C82FF', '7566FF', 'D551A0', 'EC915C', '005CC5', 'A2E6F5'])
 
 # legend
 legend.fontsize: 12
 legend.frameon:  False
 
-# Always save as 'tight'
-
-savefig.bbox:        tight
 savefig.pad_inches:  0.0
 savefig.transparent: True
 savefig.dpi:         600
 
 # Text
-text.color: dimgrey
+text.color: black
 
 #  LaTeX
+text.usetex : false
+path.simplify : True
+text.latex.preamble: \usepackage{amsmath, mathpazo, palatino, xfrac, siunitx}
 mathtext.fontset: custom
 mathtext.rm:      mathpazo
 mathtext.it:      mathpazo:italic
 mathtext.bf:      mathpazo:bold
-
-text.latex.preamble: \usepackage{amsmath, mathpazo, palatino}
-
 
 # image
 
@@ -105,17 +90,17 @@ boxplot.flierprops.color           : black
 boxplot.flierprops.marker          : o
 boxplot.flierprops.markerfacecolor : black
 boxplot.flierprops.markeredgecolor : black
-boxplot.flierprops.markeredgewidth : 1.0
+boxplot.flierprops.markeredgewidth : 1.5
 boxplot.flierprops.markersize      : 6
 boxplot.flierprops.linestyle       : none
-boxplot.flierprops.linewidth       : 1.0
+boxplot.flierprops.linewidth       : 1.5
 
 boxplot.boxprops.color     : black
-boxplot.boxprops.linewidth : 1.8
+boxplot.boxprops.linewidth : 1.5
 boxplot.boxprops.linestyle : -
 
 boxplot.whiskerprops.color     : black
-boxplot.whiskerprops.linewidth : 1.8
+boxplot.whiskerprops.linewidth : 1.5
 boxplot.whiskerprops.linestyle : -
 
 boxplot.capprops.color     : black
@@ -132,4 +117,4 @@ boxplot.meanprops.markerfacecolor : C2
 boxplot.meanprops.markeredgecolor : C2
 boxplot.meanprops.markersize      :  6
 boxplot.meanprops.linestyle       : --
-boxplot.meanprops.linewidth       : 1.0
+boxplot.meanprops.linewidth       : 1.5
