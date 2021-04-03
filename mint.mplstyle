@@ -1,10 +1,12 @@
 # Set default figure size
+
 figure.figsize:    5,5
 figure.dpi:        96
 figure.titlesize:  20
 figure.autolayout: True
 
 # fonts
+
 font.family: sans-serif
 font.sans-serif: Inter
 
@@ -36,8 +38,15 @@ ytick.color:         black
 # patches
 
 patch.linewidth:       1.5
+patch.facecolor:       C0
+patch.edgecolor:       black  # if forced, or patch is not filled
 patch.force_edgecolor: True
 patch.antialiased:     True
+
+# hatches
+
+hatch.color:     black
+hatch.linewidth: 1.0
 
 # axes
 
@@ -52,10 +61,10 @@ axes.labelweight: regular
 axes.labelcolor:  black
 axes.labelpad:    14
 axes.axisbelow:   True
-
 axes.prop_cycle : cycler('color', ['09D1D6', '4FEBA5', 'FFC867', '5C82FF', '7566FF', 'D551A0', 'EC915C', '005CC5', 'A2E6F5'])
 
 # legend
+
 legend.fontsize: 12
 legend.frameon:  False
 
@@ -64,9 +73,11 @@ savefig.transparent: True
 savefig.dpi:         600
 
 # Text
+
 text.color: black
 
 #  LaTeX
+
 text.usetex : false
 path.simplify : True
 text.latex.preamble: \usepackage{amsmath, mathpazo, palatino, xfrac, siunitx}
@@ -85,7 +96,7 @@ lines.solid_capstyle: round
 
 
 # Boxplot
-#
+
 boxplot.flierprops.color           : black
 boxplot.flierprops.marker          : o
 boxplot.flierprops.markerfacecolor : black
