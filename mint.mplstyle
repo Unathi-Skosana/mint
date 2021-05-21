@@ -70,7 +70,7 @@ legend.frameon:  False
 
 savefig.pad_inches:  0.0
 savefig.transparent: True
-savefig.dpi:         600
+savefig.dpi:         300
 
 # Text
 
@@ -78,13 +78,16 @@ text.color: black
 
 #  LaTeX
 
-text.usetex : false
+text.usetex : True
 path.simplify : True
-text.latex.preamble: \usepackage{amsmath, mathpazo, palatino, xfrac, siunitx}
+text.latex.preamble: \usepackage{amsmath, libertinus, xfrac, siunitx}
 mathtext.fontset: custom
-mathtext.rm:      mathpazo
-mathtext.it:      mathpazo:italic
-mathtext.bf:      mathpazo:bold
+mathtext.bf:  Libertinus Sans:bold
+mathtext.cal: Libertinus Sans:italic
+mathtext.it:  Libertinus Sans:italic
+mathtext.rm:  Libertinus Sans:display
+mathtext.sf:  Libertinus Sans
+mathtext.tt:  Libertinus Mono
 
 # image
 
